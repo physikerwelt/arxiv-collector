@@ -3,7 +3,7 @@ python:
   - "2.7"
 install:
 - source ./texlive_install.sh
-- pip install arxiv-collector
+- pip install https://github.com/dougalsutherland/arxiv-collector/archive/branch.zip
 addons:
   apt:
     packages:
