@@ -3,7 +3,7 @@ python:
   - "2.7"
 install:
 - source ./texlive_install.sh
-- pip install https://github.com/dougalsutherland/arxiv-collector/archive/branch.zip
+- pip install https://github.com/dougalsutherland/arxiv-collector/archive/master.zip
 addons:
   apt:
     packages:
