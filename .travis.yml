@@ -15,6 +15,7 @@ cache:
 script:
 - cd test
 - latexmk
-- arxiv-collector --debug test.tex
+- arxiv-collector --get-latexmk latexmk
+- arxiv-collector --debug  --latexmk ./latexmk test.tex
 
 
