@@ -1,6 +1,7 @@
 language: python
 python:
   - "2.7"
+  - "3.6"
 install:
 - source ./texlive_install.sh
 - pip install https://github.com/dougalsutherland/arxiv-collector/archive/master.zip
@@ -14,7 +15,6 @@ cache:
   - "$HOME/.texlive"
 script:
 - cd test
-- latexmk
 - arxiv-collector --get-latexmk latexmk
 - arxiv-collector --debug  --latexmk ./latexmk test.tex
 
